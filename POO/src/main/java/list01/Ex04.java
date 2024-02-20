@@ -1,7 +1,5 @@
 package list01;
 
-import java.util.Scanner;
-
 /*
     Osmar adora chocolates e vai para a loja com N dinheiro no bolso. O preço de cada chocolate é C.
     A loja oferece um desconto: para cada M embalagens que ele dá para a loja, ele ganha um chocolate grátis.
@@ -18,6 +16,9 @@ import java.util.Scanner;
     2
     5
  */
+
+import java.util.Scanner;
+
 public class Ex04 {
 
     public static void main(String[] args) {
@@ -33,6 +34,10 @@ public class Ex04 {
         int output =  -1;
 
         int chocolatesComprados = n / c;
+        int chocolatesExtras = chocolatesComprados / m;
+        chocolatesComprados += chocolatesExtras;
+
+        output = chocolatesComprados;
 
         return output;
     }
