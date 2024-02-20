@@ -32,7 +32,7 @@ public class Ex04 {
     int compute(int n, int c, int m) {
         int output =  -1;
 
-        
+        int chocolatesComprados = n / c;
 
         return output;
     }
